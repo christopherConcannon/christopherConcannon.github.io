@@ -23,6 +23,7 @@ h1 {
   bottom: 100px;
   font-size: 3em;
   letter-spacing: .8em;
+  z-index: 10;
 }
 .txt-type > .txt {
   border-right: 0.2rem solid red
