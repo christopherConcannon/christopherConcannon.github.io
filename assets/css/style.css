@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display');
+
+:root {
+  --pink: #FED2CF;
+  --yellow: #F2D184;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Major Mono Display', monospace;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-family: 'Major Mono Display', monospace;
+  width: 70%;
+  text-align: right;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+.container {
+  width: 95%;
+  max-width: 1425px;
+  margin: 0 auto;
+  /* overflow: hidden; */
+}
+
+a, 
+a:visited{
+  /* color: #fff; */
+  color: #000;
+  text-decoration: none;
+}
+
+/* NAVIGATION */
+#navbar {
+  background-color: var(--pink);
+  height: 70px;
+  display: flex;
+  /* position: relative; */
+  position: sticky;
+  justify-content: center;
+  /* justify-content: space-between; */
+  align-items: center;
+  z-index: 1;
+  /* margin-top: 2rem;
+  margin-bottom: 2rem; */
+  padding: 0 2.5rem;
+}
+
+.logo {
+  line-height: 1.4em;
+  font-size: 2rem; 
+  font-weight: 400;
+  /* display: none; */
+}
+
+
+#navbar > ul {
+  display: flex;
+  list-style: none;
+  /* margin-right: 10rem; */
+} 
+
+#navbar ul li {
+  padding-left: 1rem;
+} 
+
+#navbar ul li a {
+  font-family: 'Major Mono Display', monospace;
+  /* color: #fff; */
+  color: #000;
+  padding: 1.2rem 0;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  opacity: 0.7;
+}
+
+/* Hide .overlay-wrap */
+.overlay-wrap {
+  display: none;
+}
+
+.current {
+  background-repeat: repeat-x;
+  background-image: linear-gradient(to right,currentColor 100%,currentColor 0);
+  background-size: 1px 1px;
+  background-position: 0 calc(100% - 0.8em);
+}
+
+/* HERO SECTION */
+.hero {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  height: 100vh;
+  padding: 0 3rem;
+  background-color: var(--pink);
+  position: relative;
+}
+h1 {
+  position: absolute;
+  bottom: 100px;
+  font-size: 3em;
+  letter-spacing: .8em;
+  z-index: 10;
+}
+.txt-type > .txt {
+  border-right: 0.2rem solid red
+}
+.box {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+.box-white {
+  bottom: 120px;
+  right: 350px;
+  background-color:  #fcdee3;
+  border-radius: 50%;
+}
+.box-blue {
+  bottom: 200px;
+  right: 400px;
+  background-color: #2a14f2;
+}
+.box-grey {
+  top: 100px;
+  right: 183px;
+  background-color: #666;
+  z-index: 2;
+}
+.line {
+  position: absolute;
+  height: 100vh;;
+  width: 2px;
+  background-color: red;
+}
+.line-1 {
+  top: 50px;
+  right: 250px;
+}
+.line-2 {
+  top: 50px;
+  right: 225px;
+}
+.line-3 {
+  top: 50px;
+  right: 200px;
+}
+.line-4 {
+  top: 50px;
+  right: 175px;
+}
+.line-5 {
+  top: 50px;
+  right: 150px;
+}
+
+/* ABOUT */
+#about {
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.abt-title {
+  font-size: 4rem;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  margin-right: 30%;
+}
+
+.abt-content p {
+  font-family: 'Major Mono Display', monospace;
+  width: 70%;
+  text-align: right;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* WORK */
+#work {
+  padding: 4rem 0;
+}
+
+.work-heading {
+  text-align: right;
+  margin-right: 2.5rem;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* Homepage grid-items */
+.grid-item {
+  color: #fff;
+  position: relative;
+  margin: 2.5rem;
+  /* NEED TO RESIZE IMGS TO MATCH THIS HEIGHT */
+  /* height: 300px; */
+  width: calc(50% - 5rem);
+}
+
+.rsp-image {
+  display: block;
+  width: 100%;
+  /* height: auto; */
+  height: 300px;
+}
+
+
+/* EXPERIMENTAL STUFF FOR WORK CARD STYLE / STYLE ON HOVER */
+.project-test {
+  background: url('../images/work-card-background-1.png') no-repeat center;
+  opacity: 0;
+}
+.grid-item:hover .project-test
+ {
+	opacity: 0;
+	transition: opacity ease 200ms;
+}
+
+
+
+
+/* absolutely positioned child element placed on top of parent .grid-item (positioned relative) with transparent bg-color */
+.grid-item-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.2);
+  
+  /* display: none; */
+}
+
+
+/* .grid-item .grid-item-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+*/
+
+.grid-item .grid-item-text h2 {
+	color: #fff;
+	font-family: Archivo Black;
+	font-weight: 500;
+	line-height: 1.4em;
+	font-size: 2.2rem;
+} 
+
+.grid-item:hover .grid-item-overlay,
+.grid-item:hover .grid-item-text
+ {
+	opacity: 0;
+	transition: opacity ease 200ms;
+}
+
+
+.hover-skew:hover {
+  
+  transform: skew(2deg, -5deg);
+}
+
+
+/* CONTACT */
+#contact {
+  background-color: #000000;
+  border: 20px solid var(--pink);
+  height: 100vh;
+  padding: 4rem;
+}
+
+/* Contact Style Start */
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  line-height: 1.7;
+}
+
+.contact-info > * {
+  flex: 1;
+  /* margin: 15px; */
+}
+
+.contact-info-content {
+  color: var(--pink);
+}
+
+.contact-info h2, 
+.contact-info h3 {
+  color: #ffffff;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-info-content a {
+  color: var(--pink);
+}
+
+#contact .social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin: 3rem auto 0 auto;
+  width: 60%;
+  font-size: 6rem;
+}
+
+#contact .social-links li {
+  width: 50%;
+}
+
+
+#contact .social-links img {
+  width: 6rem;
+  height: 6rem;
+  padding-top: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+  border: 5px solid var(--pink);
+  display:block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: var(--pink);
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+
+.contact-form button {
+  color: #fff;
+  background: var(--pink);
+  width: 30%;
+  border: none;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  border-radius: 10px;
+  font-family: 'Major Mono Display', monospace;
+}
+
+
+
+.contact-form button:hover {
+  color: #fff;
+  background: var(--pink);
+}
+
+
+.contact-form label {
+  color: #fff;
+} 
+
+/* Contact Style End */
+
+
