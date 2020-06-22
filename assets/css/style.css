@@ -293,6 +293,10 @@ h1 {
 	transition: opacity ease 200ms;
 }
 
+.hover-skew {
+  transition: all .3s;
+}
+
 
 .hover-skew:hover {
   
@@ -348,6 +352,11 @@ h1 {
 
 #contact .social-links li {
   width: 50%;
+  transition: all .3s;
+}
+
+#contact .social-links li:hover {
+  transform: scale(1.3);
 }
 
 
