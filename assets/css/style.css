@@ -1,9 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display');
+/* @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
 
 :root {
   --pink: #FED2CF;
   --yellow: #F2D184;
+  /* --heading-text: 'Abril Fatface', cursive; */
+  --heading-text: 'Playfair Display', serif;
+  /* --body-text: 'Major Mono Display', monospace; */
+  /* --body-text: 'IBM Plex Mono', monospace; */
+  /* --body-text: 'MuseoModerno', cursive; */
+  --body-text: 'Syncopate', sans-serif;
 }
 
 * {
@@ -13,24 +23,25 @@
 }
 
 body {
-  font-family: 'Major Mono Display', monospace;
+  font-family: var(--body-text);
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Abril Fatface', cursive;
+  font-family: var(--heading-text);
 }
 
 ul {
   list-style: none;
 }
-
+/* 
 p {
-  font-family: 'Major Mono Display', monospace;
+  font-family: var(--body-text);
   width: 70%;
   text-align: right;
   margin: 0 auto;
   line-height: 1.7;
-}
+} */
+
 .container {
   width: 95%;
   max-width: 1425px;
@@ -50,17 +61,11 @@ a:visited{
   background-color: var(--pink);
   height: 70px;
   display: flex;
-  /* position: relative; */
   position: sticky;
 	top: 0;
-	/* left: 0;
-  right: 0; */
   justify-content: center;
-  /* justify-content: space-between; */
   align-items: center;
   z-index: 5;
-  /* margin-top: 2rem;
-  margin-bottom: 2rem; */
   padding: 0 2.5rem;
 }
 
@@ -73,14 +78,11 @@ a:visited{
   line-height: 1.4em;
   font-size: 2rem; 
   font-weight: 400;
-  /* display: none; */
 }
-
 
 #navbar > ul {
   display: flex;
   list-style: none;
-  /* margin-right: 10rem; */
 } 
 
 #navbar ul li {
@@ -88,8 +90,7 @@ a:visited{
 } 
 
 #navbar ul li a {
-  font-family: 'Major Mono Display', monospace;
-  /* color: #fff; */
+  font-family: var(--body-text);
   color: #000;
   padding: 1.2rem 0;
   margin: 0 0.25rem;
@@ -113,14 +114,12 @@ a:visited{
 
 /* HERO SECTION */
 .hero {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
   height: 100vh;
   padding: 0 3rem;
   background-color: var(--pink);
   position: relative;
 }
+
 .hero h1 {
   position: absolute;
   bottom: 100px;
@@ -128,15 +127,18 @@ a:visited{
   letter-spacing: .8em;
   z-index: 3;
 }
+
 .txt-type > .txt {
   border-right: 0.2rem solid red
 }
+
 .shape {
   width: 150px;
   height: 150px;
   position: absolute;
   transition: all 1s;
 }
+
 .crc-pink {
   bottom: 120px;
   right: 350px;
@@ -144,51 +146,53 @@ a:visited{
   border-radius: 50%;
   
 }
+
 .box-blue {
   bottom: 200px;
   right: 400px;
   background-color: #2a14f2;
 }
+
 .box-grey {
   top: 100px;
   right: 183px;
   background-color: #666;
   z-index: 1;
 }
+
 .line {
   position: absolute;
   height: 100vh;;
   width: 2px;
   background-color: red;
 }
+
 .line-1 {
   top: 50px;
   right: 250px;
 }
+
 .line-2 {
   top: 50px;
   right: 225px;
 }
+
 .line-3 {
   top: 50px;
   right: 200px;
 }
+
 .line-4 {
   top: 50px;
   right: 175px;
 }
+
 .line-5 {
   top: 50px;
   right: 150px;
 }
 
 /* ABOUT */
-/* #about {
-  height: 100vh;
-  background: #fff;
-  display: flex;
-  align-items: center;
-} */
 
 #about {
   height: 70vh;
@@ -205,8 +209,12 @@ a:visited{
   margin-right: 30%;
 }
 
+.abt-content {
+  flex: 1;
+}
+
 .abt-content p {
-  font-family: 'Major Mono Display', monospace;
+  font-family: var(--body-text);
   width: 70%;
   text-align: right;
   margin: 0 auto;
@@ -214,9 +222,6 @@ a:visited{
 }
 
 /* WORK */
-/* #goto-work {
-  font-size: 5rem;
-} */
 
 .work-heading {
   text-align: right;
@@ -234,16 +239,13 @@ a:visited{
   color: #fff;
   position: relative;
   margin: 2.5rem;
-  /* NEED TO RESIZE IMGS TO MATCH THIS HEIGHT */
-  /* height: 300px; */
   width: calc(50% - 5rem);
 }
 
 .rsp-image {
   display: block;
   width: 100%;
-  /* height: auto; */
-  height: 300px;
+  /* height: 250px; */
 }
 
 .project-meta {
@@ -252,19 +254,10 @@ a:visited{
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  /* font-family: var(--heading-text); */
+  font-size: .8rem;
 }
 
-
-/* EXPERIMENTAL STUFF FOR WORK CARD STYLE / STYLE ON HOVER */
-.project-test {
-  background: url('../images/work-card-background-1.png') no-repeat center;
-  opacity: 0;
-}
-.grid-item:hover .project-test
- {
-	opacity: 0;
-	transition: opacity ease 200ms;
-}
 
 
 
@@ -282,20 +275,7 @@ a:visited{
   transition: .5s ease;
   background-color: rgba(0, 0, 0, 0.2);
   
-  /* display: none; */
 }
-
-
-/* .grid-item .grid-item-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-}
-*/
 
 .grid-item .grid-item-text h2 {
 	color: #fff;
@@ -318,7 +298,6 @@ a:visited{
 
 
 .hover-skew:hover {
-  
   transform: skew(2deg, -5deg);
 }
 
@@ -327,11 +306,9 @@ a:visited{
 #contact {
   background-color: #000000;
   border: 20px solid var(--pink);
-  /* height: 100vh; */
   padding: 4rem;
 }
 
-/* Contact Style Start */
 .contact-info {
   display: flex;
   justify-content: space-between;
@@ -341,7 +318,6 @@ a:visited{
 
 .contact-info > * {
   flex: 1;
-  /* margin: 15px; */
 }
 
 .contact-info-content {
@@ -362,15 +338,12 @@ a:visited{
 #contact .social-links {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   margin: 3rem auto 0 auto;
-  /* width: 60%; */
   font-size: 6rem;
 }
 
 #contact .social-links li {
   width: 50%;
-  /* transition: all .3s; */
 }
 
 #contact .social-links li i, #contact .social-links li img {
@@ -380,10 +353,6 @@ a:visited{
 #contact .social-links li i:hover, #contact .social-links li img:hover {
   transform: scale(1.3);
 }
-/* #contact .social-links li:hover {
-  transform: scale(1.3);
-} */
-
 
 #contact .social-links img {
   width: 6rem;
@@ -409,37 +378,31 @@ a:visited{
   outline: none;
 }
 
-
 .contact-form button {
   color: #fff;
   background: var(--pink);
-  /* width: 30%; */
   border: none;
   text-align: center;
   padding: 1rem;
-  /* padding: 15px 0; */
   font-size: 1rem;
   margin-bottom: 15px;
   margin-top: 5px;
   border-radius: 10px;
-  font-family: 'Major Mono Display', monospace;
+  font-family: var(--body-text);
 }
-
-
 
 .contact-form button:hover {
   color: var(--pink);
   background: #fff;
-  font-size: 1.3rem;
   transition: all .2s;
 }
-
 
 .contact-form label {
   color: #fff;
 } 
 
 /* Contact Style End */
+
 
 
 

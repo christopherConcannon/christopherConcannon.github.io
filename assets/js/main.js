@@ -1,3 +1,4 @@
+// HERO SECTION TYPE WRITER EFFECT
 class TypeWriter {
   constructor(txtElement, words, wait = 3000) {
     this.txtElement = txtElement;
@@ -66,11 +67,12 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 
-// MOBILE MENU
+
+// MOBILE MENU 
 const mobileNavLinks = document.querySelector('#mobile-nav-links');
 const checkbox = document.querySelector('.toggler');
 
-function resetMobileNavState(event) {
+function resetMobileNavState() {
      checkbox.checked = false;
 }
 
