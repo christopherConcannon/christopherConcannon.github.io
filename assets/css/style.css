@@ -58,7 +58,7 @@ a:visited{
   justify-content: center;
   /* justify-content: space-between; */
   align-items: center;
-  z-index: 2;
+  z-index: 5;
   /* margin-top: 2rem;
   margin-bottom: 2rem; */
   padding: 0 2.5rem;
@@ -121,25 +121,28 @@ a:visited{
   background-color: var(--pink);
   position: relative;
 }
-h1 {
+.hero h1 {
   position: absolute;
   bottom: 100px;
   font-size: 3em;
   letter-spacing: .8em;
+  z-index: 3;
 }
 .txt-type > .txt {
   border-right: 0.2rem solid red
 }
-.box {
+.shape {
   width: 150px;
   height: 150px;
   position: absolute;
+  transition: all 1s;
 }
-.box-white {
+.crc-pink {
   bottom: 120px;
   right: 350px;
   background-color:  #fcdee3;
   border-radius: 50%;
+  
 }
 .box-blue {
   bottom: 200px;
@@ -180,11 +183,19 @@ h1 {
 }
 
 /* ABOUT */
-#about {
+/* #about {
   height: 100vh;
   background: #fff;
   display: flex;
   align-items: center;
+} */
+
+#about {
+  height: 70vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
 }
 
 .abt-title {
@@ -203,9 +214,9 @@ h1 {
 }
 
 /* WORK */
-#work {
-  padding: 4rem 0;
-}
+/* #goto-work {
+  font-size: 5rem;
+} */
 
 .work-heading {
   text-align: right;
@@ -233,6 +244,14 @@ h1 {
   width: 100%;
   /* height: auto; */
   height: 300px;
+}
+
+.project-meta {
+  color: #4d4d4d;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -308,7 +327,7 @@ h1 {
 #contact {
   background-color: #000000;
   border: 20px solid var(--pink);
-  height: 100vh;
+  /* height: 100vh; */
   padding: 4rem;
 }
 
@@ -343,27 +362,34 @@ h1 {
 #contact .social-links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 3rem;
+  /* justify-content: space-between; */
   margin: 3rem auto 0 auto;
-  width: 60%;
+  /* width: 60%; */
   font-size: 6rem;
 }
 
 #contact .social-links li {
   width: 50%;
-  transition: all .3s;
+  /* transition: all .3s; */
 }
 
-#contact .social-links li:hover {
+#contact .social-links li i, #contact .social-links li img {
+  transition: transform .3s;
+}
+
+#contact .social-links li i:hover, #contact .social-links li img:hover {
   transform: scale(1.3);
 }
+/* #contact .social-links li:hover {
+  transform: scale(1.3);
+} */
 
 
 #contact .social-links img {
   width: 6rem;
   height: 6rem;
   padding-top: 1rem;
+  padding-right: .6rem;
 }
 
 .contact-form input, .contact-form textarea {
@@ -387,11 +413,12 @@ h1 {
 .contact-form button {
   color: #fff;
   background: var(--pink);
-  width: 30%;
+  /* width: 30%; */
   border: none;
   text-align: center;
-  padding: 15px 0;
-  font-size: 16px;
+  padding: 1rem;
+  /* padding: 15px 0; */
+  font-size: 1rem;
   margin-bottom: 15px;
   margin-top: 5px;
   border-radius: 10px;
@@ -413,5 +440,6 @@ h1 {
 } 
 
 /* Contact Style End */
+
 
 

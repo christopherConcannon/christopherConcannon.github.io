@@ -21,8 +21,8 @@
     </div>
     <ul class="nav-items">
         <li><a href="#about">abt-me</a></li>
-        <li><a href="#work">look/see</a></li>
-        <li><a href="#contact">contact</a></li>
+        <li><a href="#goto-work">look/see</a></li>
+        <li><a href="#goto-contact">contact</a></li>
         <li><a href="https://drive.google.com/file/d/1ZDTWGtWtq6Idg8-0AN4VQJD7ydhA1W63/view?usp=sharing" target="_blank">cv</a></li>
     </ul>
   
@@ -33,11 +33,11 @@
       <div class="menu">
         <div>
           <div>
-            <ul>
+            <ul id="mobile-nav-links">
               <li><a href="#about">about me</a></li>
               <li><a href="#work">look/see</a></li>
               <li><a href="#contact">contact</a></li>
-              <li><a href="#">cv</a></li>
+              <li><a href="https://drive.google.com/file/d/1ZDTWGtWtq6Idg8-0AN4VQJD7ydhA1W63/view?usp=sharing" target="_blank">cv</a></li>
             </ul>
           </div>
         </div>
@@ -55,9 +55,9 @@
         >
         </span>
       </h1>
-      <div class="box box-blue"></div>
-      <div class="box box-white"></div>
-      <div class="box box-grey"></div>
+      <div class="shape box-blue"></div>
+      <div class="shape crc-pink"></div>
+      <div class="shape box-grey"></div>
       <div class="line line-1"></div>
       <div class="line line-2"></div>
       <div class="line line-3"></div>
@@ -67,32 +67,32 @@
 
     <!-- ABOUT SECTION -->
 
-    <section id="about">
-      <div class="abt-title">
-        <h2>
-          About Me
-        </h2>
-      </div>
-      <div class="abt-content">
-        <p>
-          A native Austinite.  The outline of my life's chronology can be expressed in terms of my great passions...
-          <br>The Beautiful Game. 
-          <br>Scholarship and voracious learning. 
-          <br>Language. 
-          <br>Rock and Roll and everything in between. 
-          <br>l'Art culinaire. 
-          <br>Some others ! germaine. 
-          <br>& design-developing websites and applications.
-        </p>
-      </div>
+    <section id="about">        
+        <div class="abt-title">
+          <h2>
+            About Me
+          </h2>
+        </div>
+        <div class="abt-content">
+          <p>
+            A native Austinite.  The outline of my life's chronology can be expressed in terms of my great passions...
+            <br>The Beautiful Game. 
+            <br>Scholarship and voracious learning. 
+            <br>Language. 
+            <br>Rock and Roll and everything in between. 
+            <br>l'Art culinaire. 
+            <br>Some others ! germaine. 
+            <br>& design-developing websites and applications.
+          </p>
+        </div>
     </section>
 
 
     <!-- WORK SECTION -->
 
-    <!-- NEED TO RESIZE IMG TO HEIGHT 300PX(?)  -->
 
-    <section id="work">
+    <section id="work" class="work">
+      <span id="goto-work"> &nbsp; </span>
       <div class="container">
         <h2 class="work-heading">look/see</h2>
         <div class="grid">
@@ -110,132 +110,102 @@
           <div class="grid-item hover-skew" id="hover-skew-test">
             <a href="https://rocky-sierra-41169.herokuapp.com/" target="blank">
               <img src="./assets/images/dev-connector.png"  class="rsp-image">
-            </a>  
+            </a>
+            <div class="project-meta">
+              <h3>Dev Connector</h3>
+              <span>MERN Stack</span>
+            </div>  
           </div>
 
           <div class="grid-item hover-skew">
             <a href="https://whispering-shelf-69508.herokuapp.com/" target="blank">
               <img src="./assets/images/yelp-camp.png"  class="rsp-image">
-            </a>  
+            </a> 
+            <div class="project-meta">
+              <h3>Yelp Camp</h3>
+              <span>Node.js Express</span>
+            </div> 
           </div>
+
+          <div class="grid-item hover-skew">
+            <a href="https://christopherconcannon.github.io/color-app/" target="blank">
+              <img src="./assets/images/color-palette-customizer.png"  class="rsp-image">
+            </a> 
+            <div class="project-meta">
+              <h3>Color Palette Customizer</h3>
+              <span>React</span>
+            </div> 
+          </div>
+
+          <div class="grid-item hover-skew">
+            <a href="https://christopherconcannon.github.io/calendar-app/" target="blank">
+              <img src="./assets/images/work-day-scheduler.png"  class="rsp-image">
+              <div class="project-meta">
+                <h3>Work Day Scheduler</h3>
+                <span>jQuery Bootstrap</span>
+              </div> 
+            </a>          
+          </div>
+
+          <div class="grid-item hover-skew">
+            <a href="https://christopherconcannon.github.io/taskinator/" target="blank">
+              <img src="./assets/images/taskinator.png"  class="rsp-image">
+              <div class="project-meta">
+                <h3>Taskinator</h3>
+                <span>jQuery Bootstrap</span>
+              </div> 
+            </a>          
+          </div>
+          
 
           <div class="grid-item hover-skew">
             <a href="https://christopherconcannon.github.io/loopLab/" target="blank">
               <img src="./assets/images/loopLab.png"  class="rsp-image">
-              <!-- <div class="grid-item-overlay">
-                <div class="grid-item-text">
-                  <h2>LoopLab</h2>
-                </div>
-              </div> -->
+              <div class="project-meta">
+                <h3>LoopLab</h3>
+                <span>HTML5 Bootstrap JS</span>
+              </div> 
             </a>          
           </div>
 
           <div class="grid-item hover-skew">
             <a href="https://christopherconcannon.github.io/newsgrid/" target="blank">              
               <img src="./assets/images/newsgrid.png"  class="rsp-image">
-              <!-- <div class="grid-item-overlay">
-                <div class="grid-item-text">
-                  <h2>NewsGrid</h2>
-                </div>
-              </div> -->
+              <div class="project-meta">
+                <h3>NewsGrid</h3>
+                <span>HTML5 CSS Grid</span>
+              </div> 
             </a>         
           </div>
 
           <div class="grid-item hover-skew">
             <a href="https://christopherconcannon.github.io/run-buddy/" target="blank">
               <img src="./assets/images/run-buddy.png"  class="rsp-image">
-              <!-- <div class="grid-item-overlay">
-                <div class="grid-item-text">
-                  <h2>Run Buddy</h2>
-                </div>
-              </div> -->
+              <div class="project-meta">
+                <h3>Run Buddy</h3>
+                <span>HTML5 CSS3</span>
+              </div> 
             </a>         
           </div>
 
           <div class="grid-item hover-skew">
             <a href="https://christopherconcannon.github.io/EdgeLedger/" target="blank">
               <img src="./assets/images/EdgeLedger.png"  class="rsp-image">
-              <!-- <div class="grid-item-overlay">
-                <div class="grid-item-text">
-                  <h2>Edge Ledger</h2>
-                </div>
-              </div> -->
+              <div class="project-meta">
+                <h3>Edge Ledger</h3>
+                <span>HTML5 CSS3</span>
+              </div> 
             </a>         
           </div>
         </div>
       </div>
     </section>
-    <!-- <section id="work">
-      <div class="container">
-        <div class="grid">
-          <div class="grid-item">
-            <a href="https://rocky-sierra-41169.herokuapp.com/" target="blank">
-              <img src="./assets/images/dev-connector.png"  class="rsp-image">
-              <div class="grid-item-overlay">
-                <div class="grid-item-text">
-                  <h2>Dev Connector</h2>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="https://whispering-shelf-69508.herokuapp.com/" target="blank">
-              <img src="./assets/images/yelp-camp.png"  class="rsp-image">
-              <div class="grid-item-overlay">
-                <div class="grid-item-text">
-                  <h2>Yelp Camp</h2>
-                </div>
-              </div>
-            </a>  
-          </div>
-          <div class="grid-item">
-            <a href="https://christopherconcannon.github.io/loopLab/" target="blank">
-              <img src="./assets/images/loopLab.png"  class="rsp-image">
-              <div class="grid-item-overlay">
-                <div class="grid-item-text">
-                  <h2>LoopLab</h2>
-                </div>
-              </div>
-            </a>          
-          </div>
-          <div class="grid-item">
-            <a href="https://christopherconcannon.github.io/newsgrid/" target="blank">              
-              <img src="./assets/images/newsgrid.png"  class="rsp-image">
-              <div class="grid-item-overlay">
-                <div class="grid-item-text">
-                  <h2>NewsGrid</h2>
-                </div>
-              </div>
-            </a>         
-          </div>
-          <div class="grid-item">
-            <a href="https://christopherconcannon.github.io/run-buddy/" target="blank">
-              <img src="./assets/images/run-buddy.png"  class="rsp-image">
-              <div class="grid-item-overlay">
-                <div class="grid-item-text">
-                  <h2>Run Buddy</h2>
-                </div>
-              </div>
-            </a>         
-          </div>
-          <div class="grid-item">
-            <a href="https://christopherconcannon.github.io/EdgeLedger/" target="blank">
-              <img src="./assets/images/EdgeLedger.png"  class="rsp-image">
-              <div class="grid-item-overlay">
-                <div class="grid-item-text">
-                  <h2>Edge Ledger</h2>
-                </div>
-              </div>
-            </a>         
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-
+   
     <!-- CONTACT SECTION -->
 
     <footer id="contact" class="contact">
+      <span id="goto-contact"> &nbsp; </span>
+
       <div class="contact-info">
         <div class="contact-info-content">
           <h2>Reach out</h2>
