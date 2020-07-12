@@ -192,6 +192,8 @@ a{
   margin-top: 5rem;
 }
 
+
+
 .abt-title {
   font-size: 4rem;
   writing-mode: vertical-lr;
@@ -216,6 +218,16 @@ a{
 .work-heading {
   text-align: right;
   margin-right: 2.5rem;
+}
+
+/* make sure internal link scroll displays section heading */
+#work-heading::before {
+  display: block;
+  content: " ";
+  margin-top: -100px;
+  height: 100px;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .grid {
