@@ -1,6 +1,6 @@
 # christopherConcannon.github.io
 Personal portfolio site  
 
-![](https://img.shields.io/badge/license-MIT-green)
+![MIT license badge](https://img.shields.io/badge/license-MIT-green)
 
 
