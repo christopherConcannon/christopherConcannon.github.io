@@ -217,7 +217,7 @@ a{
 
 .work-heading {
   text-align: right;
-  margin-right: 2.5rem;
+  margin: 2.5rem 2.5rem 0 0;
 }
 
 /* make sure internal link scroll displays section heading */
@@ -258,6 +258,31 @@ a{
   align-items: center;
   /* font-family: var(--heading-text); */
   font-size: .8rem;
+}
+
+.project-meta * {
+  flex: 1 1 30%;
+}
+
+.project-meta h3 {
+  text-align: left;
+}
+
+.project-meta a {
+margin-right: 4rem;}
+
+.project-meta a,
+.project-meta span {
+  text-align: right;
+}
+
+.project-meta i.fab {
+  font-size: 2rem;
+  transition: color .2s;
+}
+
+.project-meta i.fab:hover {
+  color: var(--pink);
 }
 
 
