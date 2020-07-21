@@ -180,6 +180,9 @@
 }
 
 /* HERO */
+.hero {
+  height: 85vh;
+}
 
 .line {
   height: 67vh;
