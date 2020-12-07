@@ -69,6 +69,7 @@ function init() {
 
 
 // MOBILE MENU 
+// HIDE MOBILE MENU PAGE SELECTION CLICK.  TRIGGER STYLE CHANGES BY TARGETING CHECKED STATE
 const mobileNavLinks = document.querySelector('#mobile-nav-links');
 const checkbox = document.querySelector('.toggler');
 
